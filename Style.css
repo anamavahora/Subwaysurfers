@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  background: #333;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+#game-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#87ceeb, #4caf50);
+  overflow: hidden;
+}
+
+#player {
+  position: absolute;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  background: red;
+  left: calc(50% - 25px);
+  transition: left 0.2s, bottom 0.2s;
+  z-index: 10;
+}
+
+.obstacle, .coin {
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  background: gray;
+}
+
+.coin {
+  background: gold;
+  border-radius: 50%;
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  color: white;
+}
